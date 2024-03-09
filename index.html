@@ -1,79 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mike's Portfolio</title>
-  <link rel="stylesheet" href=".\assets\css\reset.css">
-  <link rel="stylesheet" href=".\Assets\css\style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike's Portfolio of Skills</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
-
-
 <body>
-  <header> 
+  <header>
     <div class="bg">
-      <img src="./Assets/images/TopBg.jpg" alt="black backg">
-        <div class="name">Mike</div>
-            <ul class="listitems">
-              <li><a href="Aboutme">About me</a></li>
-              <li><a href="Work">Work</a></li>
-              <li><a href="Contactme">Contact me</a></li>
-              <li><a href="Resume">Resume</a></li>
-            </ul>
-        <div class="Headerbottom">
-          <h2><p>Cool stuff here</p></h2>
-        </div>
-      </div>
-    </div>
-  </header>
-</div>
-
-  <main>
-    <section id="Aboutmetext">
-      <div style="width: 25%; float:left">
-        <h2>About me</h2> 
-      </div>
-      <div style="width: 75%; float:right">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div style="width: 25%; float: left;">
-        <h2> Work </h2> </div>
-      <div style="width: 75%; float:right">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-      <div class="card">
-      <div style="width: 100%; float:right">
-        <ul2>
-          <li1><a href="https://sirmiked.github.io">This was my first project I worked on with the EDx program.</a></li1>
-          <li2><a href="https://www.sgbcoromocto.ca">This was my first paid project. I built this website for a pastor friend of mine.</a></li2>
-          <li3><a href="3rd Project">This was my third project I worked on.</a></li3>
-          <li4><a href="4th Project">This was my fourth project I worked on.</a></li4>
-          <li5><a href="5th Project">This was my fifth project I worked on</a></li5>
+        <img src="./Assets/images/TopBg.jpg" alt="black background">
+        <div class="name">Mike's Portfolio</div>
+        <ul class="listitems">
+            <li><a href="#title1">About me</a></li>
+            <li><a href="#title2">Work</a></li>
+            <li><a href="#comment">Contact me</a></li>
+            <li><a href="#resume">Resume</a></li>
         </ul>
+    </div>
+</header>
+
+  <main class="main">
+    <section id="aboutmetext">
+      <div class="content">
+          <div class="item1" id="title1">
+              <div class="title1">About me</div>
+              <p>Paragraph 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <span class="hidden-span"><br><br>Additional text: Paragraph 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+              </p>
+          </div>
+          <div class="item2" id="title2">
+              <div class="title2">Work</div>
+              <p>Paragraph 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <span class="hidden-span"><br>Additional text: Paragraph 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+          </div>
       </div>
-    </section>
-      <form>
-        <h3>Feel free to leave me a message, ask questions or make requests:</h3>
-          <p>
-          <input class="text-input" id="username" type="text" placeholder="Name" />
-          </p>
-          <p>
-          <input class="text-input-email" id="email" type="text" placeholder="me@example.com" />
-          </p>
-          <p>
-          <textarea class="text-input-comment" id="comment" placeholder="Comments or questions will be answered as soon as possible."></textarea>
-          </p>
-          <p><input class="checkbox" id="agreement" type="checkbox" />
-          <label for="agreement">I agree to share my e-mail address and name to be contacted in return. No information will be given or sold!</label>
-          </p>
-          <button class="button">Submit</button>
-      </form> 
+  </section>
+    <!--In the code below I plan to have the titles of each card show up when you hover over the cards-->
+    <div class="card">
+      <ul>
+        <li>
+          <a href="https://github.com/SirMikeD">
+            <img src="./Assets/images/github-mark.png" alt="Github logo" width="250" height="250">
+            <!-- <p>Github</p> -->
+          </a>
+        </li>
+        <li>
+          <a href="https://www.sgbcoromocto.ca">
+            <img src="./Assets/images/SGBCScreenshot.png" alt="SGBC Screenshot" width="250" height="250">
+            <!-- <p>SGBC</p> -->
+          </a>
+        </li>
+        <li>
+          <a href="https://www.reddit.com/r/minipainting/">
+            <img src="./Assets/images/miniature-painting.png" alt="Miniature painting" width="250" height="250">
+            <!-- <p>Miniatures</p> -->
+          </a>
+        </li>
+        <li>
+          <a href="https://www.reddit.com/r/ballpython/">
+            <img src="./Assets/images/snakecare.jpg" alt="Snake care" width="250" height="250">
+            <!-- <p>Snake</p> -->
+          </a>
+        </li>
+        <li>
+          <a href="https://www.reddit.com/r/germanshepherds/">
+            <img src="./Assets/images/Roxy.png" alt="Roxy" width="280" height="250">
+            <!-- <p>dog</p> -->
+          </a>
+        </li>
+      </ul>
+    </div>
+    <form>
+      <h3>Feel free to leave me a message, ask questions or make requests:</h3>
+      <p><input class="text-input" id="username" type="text" placeholder="Name"></p>
+      <p><input class="text-input-email" id="email" type="text" placeholder="me@example.com"></p>
+      <p><textarea class="text-input-comment" id="comment" placeholder="Comments or questions will be answered as soon as possible."></textarea></p>
+      <p>
+        <label for="agreement" class="checkbox">
+          <input id="agreement" type="checkbox">
+          I agree to share my e-mail address and name to be contacted in return.
+        </label>
+      </p>
+      <button class="button">Submit</button>
+    </form>
   </main>
 
   <footer>
-    <span>Thanks for visiting!</span>
+    <div class="bg">
+      <img src="./Assets/images/TopBg.jpg" alt="black background">
+      <p>Thank you for your Visit!</p>
+    </div>
   </footer>
 </body>
-
 </html>

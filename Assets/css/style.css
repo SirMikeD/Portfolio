@@ -14,9 +14,7 @@
   115% { text-shadow: 2px 2px 15px rgb(224, 126, 14); }
 }
 
-main {
-  min-height: calc(100vh - 200px); 
-}
+
 
 /* Body styling */
 body {
@@ -81,7 +79,7 @@ body {
   position: relative;
   list-style: none;
   padding: 10px;
-  margin-top: 5px;
+  margin-top: 1px;
   color: #701919;
   text-align: center;
   -webkit-text-stroke: 1.5px #472323;

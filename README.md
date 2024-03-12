@@ -3,7 +3,7 @@
 
 ## Description
 
-This is my first attempt at making a Portfolio. Although I am lacking some projects to demonstrat and lack design skills; this gives me a good template.
+This is my first attempt at making a Portfolio. Although I am lacking some projects to demonstrate and lack design skills; this gives me a good template.
 
 ## Usage
 

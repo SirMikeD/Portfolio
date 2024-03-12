@@ -1,5 +1,6 @@
 /*I could redo the whole page a second time but optimized for cellphones with @media*/
 /*Also I would like to welcome you to a page brought to you by the 90s cause that's all my artistic skills know*/
+/*I know this looks completly different than the .gif that was provided but Sean, our instructor told us to make it our own, it should still have all requirements filled*/
 
 @media screen and (min-width: 1307px) {
   /* Move the second card to the first position */
@@ -67,6 +68,7 @@ body {
   left: 0; 
   width: 100%; 
   height: 100%; 
+  box-shadow: 0 0 20px #701919;
   z-index: -1; 
 }
 
@@ -88,17 +90,6 @@ body {
 
 /* Background styling */
 .bg {
-  position: relative;
-  box-shadow: 0 0 20px #701919;
-}
-
-.bg img {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  display: flex;
-  height: 200px; 
-  width: 100%;
-  display: block;
   position: relative;
 }
 
@@ -131,12 +122,12 @@ body {
 
 /* Applies the step pattern to top right*/
 .listitems li:nth-child(1) {
-  transform: translateX(630px); 
+  transform: translateX(650px); 
   order: 2;
 }
 
 .listitems li:nth-child(2) {
-  transform: translateX(510px); 
+  transform: translateX(530px); 
   order: 3;
 }
 
@@ -488,6 +479,16 @@ button:hover {
 /* Inset shadow on click */
 button:active {
   box-shadow: inset 0 0 5px 2px #180404, 0 0 20px rgba(206, 120, 120, 0.8); 
+}
+
+.bg img {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  height: 200px; 
+  width: 100%;
+  display: block;
+  position: relative;
 }
 
 /* Footer styling */

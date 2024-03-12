@@ -2,17 +2,14 @@
 /*Also I would like to welcome you to a page brought to you by the 90s cause that's all my artistic skills know*/
 /*I know this looks completly different than the .gif that was provided but Sean, our instructor told us to make it our own, it should still have all requirements filled*/
 
-@media screen and (min-width: 1307px) {
+@media screen and (min-width: 1310px) {
   /* Move the second card to the first position */
-  .card ul li:nth-child(2) {
-    order: 3;
+  .card ul li:nth-child(1) {
+    order: 2;
   }
 }
 
 @media screen and (max-width: 990px) {
-  body {
-    font-size: 16px;
-  }
   /* Move the second card to the top */
   .card ul li:nth-child(2) {
     order: -1;
@@ -21,10 +18,9 @@
 
 @media screen and (max-width: 1306px) {
   .listitems {
-    flex-direction: column; /* Change flex direction to column */
-    margin-top: 20px; /* Adjust margin-top as needed */
+    flex-direction: column; 
     padding: 20px;
-    align-items: center; /* Align items horizontally */
+    align-items: center; 
   }
 
   .listitems li {
@@ -51,6 +47,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
 }
 
+/*I had an issue with permission on this image*/
 #mike {
   position: absolute;
   max-width: 15%;
@@ -60,6 +57,9 @@ body {
   transform: scaleX(-1);
   z-index: 9999;
   border-radius: 125px;
+  background-image: url('meno.jpg'); /* Specify the background image */
+  background-size: cover; /* Adjust background size if needed */
+  background-position: center; /* Adjust background position if needed */
 }
 
 #topbg {

@@ -58,7 +58,7 @@ body {
   min-width: 10%;
   min-height: 80%;
   transform: scaleX(-1);
-  z-index: 1;
+  z-index: 9999;
   border-radius: 125px;
 }
 

@@ -92,13 +92,6 @@ body {
   z-index: 1;
 }
 
-@media screen and (max-width: 9000px) {
-  .name {
-    font-size: 60px;
-    top: 50px;
-    left: 150px;
-  }
-
 /* Background styling */
 .bg {
   position: relative;

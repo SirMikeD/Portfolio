@@ -4,26 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mike's Portfolio of Skills</title>
-  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./Assets/css/reset.css">
   <link rel="stylesheet" href="./Assets/css/style.css">
 </head>
 <body>
   <header>
     <div class="bg">
-        <img src="./Assets/images/TopBg.jpg" alt="black background">
-        <div class="name">Mike's Portfolio</div>
-        <ul class="listitems">
-            <li><a href="#title1">About me</a></li>
-            <li><a href="#title2">Work</a></li>
-            <li><a href="#comment">Contact me</a></li>
-            <li><a href="#resume">Resume</a></li>
-        </ul>
+      <img id="mike" src="/Assets/images/meno.jpg" alt="Mike">
+      <img id="topbg" src="./Assets/images/TopBg.jpg" alt="black background">
+      <div class="name">Mike's Portfolio</div>
+      <ul class="listitems">
+        <li><a href="#title1">About me</a></li>
+        <li><a href="#title2">Work</a></li>
+        <li><a href="#username">Contact me</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
     </div>
-</header>
-
+  </header>
+<!--I plan on adding the ambg.jpg as a background for the aboutmetext section-->
   <main class="main">
-    <section id="aboutmetext">
-      <div class="content">
+      <section id="aboutmetext">
+        <div class="content">
           <div class="item1" id="title1">
               <div class="title1">About me</div>
               <p>Paragraph 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -36,53 +37,52 @@
               <span class="hidden-span"><br>Additional text: Paragraph 4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
           </div>
       </div>
-  </section>
+    </section>
     <!--In the code below I plan to have the titles of each card show up when you hover over the cards-->
     <div class="card">
       <ul>
         <li>
           <a href="https://github.com/SirMikeD">
             <img src="./Assets/images/github-mark.png" alt="Github logo" width="250" height="250">
-            <!-- <p>Github</p> -->
+            <p>Github</p> 
           </a>
         </li>
         <li>
           <a href="https://www.sgbcoromocto.ca">
-            <img src="./Assets/images/SGBCScreenshot.png" alt="SGBC Screenshot" width="250" height="250">
-            <!-- <p>SGBC</p> -->
+            <img src="./Assets/images/SGBCScreenshot.png" alt="SGBC" width="250" height="250">
+            <p>SGBC</p> 
           </a>
         </li>
         <li>
           <a href="https://www.reddit.com/r/minipainting/">
             <img src="./Assets/images/miniature-painting.png" alt="Miniature painting" width="250" height="250">
-            <!-- <p>Miniatures</p> -->
+            <p>Miniatures</p> 
           </a>
         </li>
         <li>
           <a href="https://www.reddit.com/r/ballpython/">
             <img src="./Assets/images/snakecare.jpg" alt="Snake care" width="250" height="250">
-            <!-- <p>Snake</p> -->
+            <p>Snake</p> 
           </a>
         </li>
         <li>
           <a href="https://www.reddit.com/r/germanshepherds/">
             <img src="./Assets/images/Roxy.png" alt="Roxy" width="280" height="250">
-            <!-- <p>dog</p> -->
+            <p>Dog</p> 
           </a>
         </li>
       </ul>
     </div>
     <form>
-      <h3>Feel free to leave me a message, ask questions or make requests:</h3>
+      <h3>Feel free to leave me a message, ask questions, or make requests:</h3>
       <p><input class="text-input" id="username" type="text" placeholder="Name"></p>
       <p><input class="text-input-email" id="email" type="text" placeholder="me@example.com"></p>
       <p><textarea class="text-input-comment" id="comment" placeholder="Comments or questions will be answered as soon as possible."></textarea></p>
-      <p>
-        <label for="agreement" class="checkbox">
-          <input id="agreement" type="checkbox">
-          I agree to share my e-mail address and name to be contacted in return.
-        </label>
-      </p>
+      <div class="checkbox">
+        <input id="agree" type="checkbox">
+        <label for="agree">I agree to share my e-mail address and name to be contacted in return.</label>
+        <label id="agree-label" for="agree">This is a legally binding notice that I will never volunteer any information of my own free will!</label>
+      </div>
       <button class="button">Submit</button>
     </form>
   </main>

@@ -1,7 +1,38 @@
-/* Responsive styling */
-@media screen and (max-width: 1024px) {
-  h1 {
-    font-size: 24px;
+/*I could redo the whole page a second time but optimized for cellphones with @media*/
+
+@media screen and (min-width: 1307px) {
+  /* Move the second card to the first position */
+  .card ul li:nth-child(2) {
+    order: -1 !important;
+  }
+}
+
+@media screen and (min-width: 1101px) {
+   /* Move the second card to the middle*/
+  .card ul li:nth-child(2) {
+    order: 0;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  body {
+    font-size: 16px;
+  }
+  /* Move the second card to the top */
+  .card ul li:nth-child(2) {
+    order: -1;
+  }
+} 
+@media screen and (max-width: 1306px) {
+  .listitems {
+    flex-direction: column; /* Change flex direction to column */
+    margin-top: 20px; /* Adjust margin-top as needed */
+    padding: 20px;
+    align-items: center; /* Align items horizontally */
+  }
+
+  .listitems li {
+    margin: 10px 0; /* Adjust margin */
   }
 }
 
@@ -14,24 +45,40 @@
   115% { text-shadow: 2px 2px 15px rgb(224, 126, 14); }
 }
 
-
-
 /* Body styling */
 body {
   flex-direction: column;
   line-height: 1.3;
-  margin: 0;
-  background-color: #051e36;
+  margin: 0 auto; 
+   background-color: #051e36;
   display: block;
   font-family: 'Times New Roman', Times, serif;
 }
+
+#mike{
+  position: absolute;
+  max-width: 15%;
+  height: auto;
+  transform: scaleX(-1);
+  z-index: 1;
+  border-radius: 125px;
+}
+
+#topbg {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  height: 100%; 
+  z-index: -1; 
+}
+
 
 /* Name styling */
 .name {
   font-family: Georgia, 'Times New Roman', Times, serif;
   position: absolute;
-  top: 15%;
-  left: 10%;
+  left: 20%;
   background-color: none;
   color: #701919;
   padding: 10px 20px;
@@ -40,18 +87,18 @@ body {
   -webkit-text-stroke: 1.5px #180404;
   animation: glowing 5s infinite alternate;
   display: flex;
+  z-index: 1;
 }
 
 /* Background styling */
 .bg {
   position: relative;
-  box-shadow: 0 0 20px #701919; /* Adjust the values as needed */
+  box-shadow: 0 0 20px #701919;
 }
 
 .bg img {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
   display: flex;
   height: 200px; 
   width: 100%;
@@ -63,28 +110,27 @@ body {
 .listitems {
   font-size: larger;
   font-weight: 600;
-  position: absolute;
-  bottom: 4px;
-  left: 55%;
+  position: relative;
+  top: 2px;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
- 
   animation: glowing 5s infinite alternate;
-  
-}
+  }
 
 .listitems li {
   position: relative;
   list-style: none;
-  padding: 10px;
   margin-top: 1px;
   color: #701919;
   text-align: center;
   -webkit-text-stroke: 1.5px #472323;
   animation: glowing 5s infinite alternate;
   display: flex;
+  border: 2px dotted #701919; 
+  border-radius: 50px; 
+  margin: 0 right;
 }
 
 /* Applies the step pattern to top right*/
@@ -125,15 +171,18 @@ body {
   font-weight: bolder;
   color: #fff;
   text-shadow: 1px 1px 9px #701919;
-  background-image: url("./Assets/images/ambg.jpg"); 
+  background-image: url('/Assets/images/ambg.jpg'); 
   background-size: cover; 
   background-position: center; 
-  top: 0px;
+  height: 500px;
+  top: 5px;
   bottom: 150px;
   padding-bottom: 90px;
+  z-index: 1; 
 }
 
 .content {
+  position: absolute;
   max-width: 600px;
   z-index: 1; 
 }
@@ -220,7 +269,9 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 50px; 
+  top: 100px; 
+  margin-bottom: 50px;
+  padding: 15px;
 }
 
 .card ul {
@@ -253,6 +304,42 @@ p {
   max-width: 225px;
 }
 
+.card ul li:nth-child(2) {
+  border: 5px solid #000;
+  background-color: #180404;
+  padding: 15px 15px 15px 15px;
+  border-radius: 50px;
+  margin: 25px;
+  max-width: 300px;
+  box-shadow: 0 0 18px #180404;
+  transform: scale(1.25); 
+}
+
+.card ul li:nth-child(2):hover {
+  box-shadow: inset 0 0 20px rgb(231, 114, 114);
+  transform: scale(1.75, 1.75);
+  transition-duration: 2s;
+}
+
+.card ul li p {
+  display: none; /* Initially hide the titles */
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #c41f1f; /* Set the text color */
+  background-color: #000;
+  border-radius: 20px;
+  padding: 5px;
+  z-index: 1;
+}
+
+/* Show the titles when the card is hovered */
+  .card ul li:hover p {
+    display: block; 
+}
+
 /* Form styling */
 form {
   position: relative;
@@ -261,6 +348,14 @@ form {
   text-align: center;
   padding-top: 0;
   padding-bottom: 10px;
+}
+
+form h3 {
+  position: absolute; 
+  bottom: 310px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  animation: glowing 5s infinite alternate;
 }
 
 .text-input {
@@ -287,28 +382,53 @@ form {
 .text-input-comment {
   position: relative;
   text-align: center;
-  width: 400px;
+  line-height: 120px;
+  width: 500px;
   height: 150px;
   font-size: 14pt;
   border: 6px solid #701919;
   border-radius: 15px;
   top: -40px;
-  margin-bottom: 0; 
+  margin-bottom: -30px; 
 }
 
+/*The code below is all for the checkbox and its functions*/
 .checkbox {
   position: relative;
-  top: -40px; 
-  background-color: #ccc; 
-  padding: 10px; 
-  border: 5px solid #701919;
-  border-radius: 15px 15px 15px 15px;
+  display: inline-block;
+  text-align: center;
 }
 
-.checkbox:checked + label::after {
-  margin-left: 10px;
-  font-size: 80%;
-  content: "(thanks!, No information will be given or sold!)";
+.checkbox input[type="checkbox"] {
+  position: absolute; 
+  left: -125px; 
+  top: 50%; 
+  transform: translateY(-380%); 
+  margin-right: 10px; 
+}
+
+.checkbox label {
+  position: absolute;
+  display: block;
+  width: 500px;
+  font-size: 8pt;
+  border: 6px solid #701919;
+  border-radius: 5px;
+  background-color: #ccc;
+  opacity: 20%;
+  left: -145px;
+  top: -55px;
+  }
+
+#agree-label {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  text-align: center;
+}
+
+#agree:checked ~ #agree-label {
+  opacity: 1;
+  color: red;
 }
 
 /*Button formating*/
@@ -334,15 +454,15 @@ button:active {
 
 /* Footer styling */
 footer {
-  position: relative; /* Change absolute to relative */
+  position: relative; 
   width: 100%;
-  margin-top: 200px; /* Add margin-top to create space between form and footer */
+  margin-top: 200px; 
 }
 
 /* Footer image styling */
 footer img {
-  display: block;
-  width: 100%;
+  size: cover;
+  width: 0%;
   height: 100%;
 }
 

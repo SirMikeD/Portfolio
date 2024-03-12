@@ -57,7 +57,6 @@ body {
   transform: scaleX(-1);
   z-index: 9999;
   border-radius: 125px;
-  background-image: url('meno.jpg'); /* Specify the background image */
   background-size: cover; /* Adjust background size if needed */
   background-position: center; /* Adjust background position if needed */
 }
@@ -177,7 +176,7 @@ body {
   font-weight: bolder;
   color: #fff;
   text-shadow: 1px 1px 9px #701919;
-  background-image: url('/Assets/images/ambg.jpg'); 
+  background-image: url('../images/ambg.jpg'); 
   background-size: cover; 
   background-position: center; 
   height: 500px;

@@ -1,5 +1,7 @@
 /*I could redo the whole page a second time but optimized for cellphones with @media*/
-/*Also I would like to welcome you to a page brought to you by the 90s theme cause thats all my artistic skills knows*/
+/*Also I would like to welcome you to a page brought to you by the 90s cause thats all my 
+artistic skills know*/
+
 @media screen and (min-width: 1307px) {
   /* Move the second card to the first position */
   .card ul li:nth-child(2) {
@@ -23,6 +25,7 @@
     order: -1;
   }
 } 
+
 @media screen and (max-width: 1306px) {
   .listitems {
     flex-direction: column; /* Change flex direction to column */
@@ -74,7 +77,6 @@ body {
   height: 100%; 
   z-index: -1; 
 }
-
 
 /* Name styling */
 .name {

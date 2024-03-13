@@ -16,6 +16,9 @@ I did it all myself 🏆
 
 CC0-1.0
 
+## Code Source
+
+The code in this project is sourced from various tutorials, online resources, and personal implementations. 
 
 ## How to Contribute
 

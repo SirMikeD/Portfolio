@@ -22,6 +22,6 @@ The code in this project is sourced from various tutorials, online resources, an
 
 ## How to Contribute
 
-Don't this is mine
+Don't this is mine, but send your comments and I might work with you on something.
 
 ![Screenshot of my portfolio](./Assets/images/Screenshotportfolio.png)

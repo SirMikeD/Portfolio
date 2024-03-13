@@ -21,4 +21,4 @@ CC0-1.0
 
 Don't this is mine
 
-![Screenshot of my portfolio](Assets\images\Screenshotportfolio.png)
+![Screenshot of my portfolio](./Assets/images/Screenshotportfolio.png)

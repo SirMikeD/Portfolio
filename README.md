@@ -1,6 +1,5 @@
 # Portfolio
 
-
 ## Description
 
 This is my first attempt at making a Portfolio. Although I am lacking some projects to demonstrate and lack design skills; this gives me a good template.
@@ -21,3 +20,5 @@ CC0-1.0
 ## How to Contribute
 
 Don't this is mine
+
+![Screenshot of my portfolio](Assets\images\Screenshotportfolio.png)
